@@ -1,0 +1,9 @@
+<div [ngStyle]="getStyles()">
+  <ng-container *ngFor="let item of data">
+    <div class="item">{{ item.eventName }}</div>
+    <div>{{ item.eventDate }}</div>
+  </ng-container>
+  <div [ngStyle]="getProgressBarStyles()">
+    <canvas id="canvas"></canvas>
+  </div>
+</div>
